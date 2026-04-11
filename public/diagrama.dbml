@@ -1,0 +1,37 @@
+Table configuraciones {
+    id int [pk, increment]
+    nombre varchar
+    descripcion varchar
+    telefono varchar
+    correo_electronico varchar
+    web varchar
+    logo varchar
+
+}
+
+Table gestiones{
+    id int [pk, increment]
+    nombre varchar
+}
+
+Table periodos{
+    id int [pk, increment]
+    nombre varchar
+    gestion_id int [ref: > gestiones.id]
+}
+
+Table niveles{
+    id int [pk, increment]
+    nombre varchar
+}
+
+Table grados{
+    id int [pk, increment]
+    nombre varchar
+    nivel_id int [ref: > niveles.id]
+}
+
+Table turnos{
+    id int [pk, increment]
+    nombre varchar
+}
