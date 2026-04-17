@@ -337,10 +337,24 @@ return [
         ],
 
         [
+            'text' => 'PARALELOS',
+            'url' => 'admin/paralelos',
+            'icon' => 'fas fa-fw fa-clone',
+            'classes' => 'bg-blue text-white',
+        ],
+
+        [
             'text' => 'TURNOS',
             'url' => 'admin/turnos',
             'icon' => 'fas fa-fw fa-clock',
             'classes' => 'bg-blue text-white',
+        ],
+
+        [
+            'text' => 'ROLES',
+            'icon' => 'fas fa-fw fa-user-check',
+            'classes' => 'bg-blue text-white',
+            'url' => 'admin/roles',
         ],
     ],
 
